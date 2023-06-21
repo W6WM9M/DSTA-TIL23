@@ -1,6 +1,6 @@
 # DSTA Today-I-Learned AI 2023
 <p align="justify"> 
-  This GitHub repository contains the source code for my implementation of the advanced tier of Defence Science & Technology Agency (DSTA) 2023 Brainhack Decode the Future Artificial Intelligence (AI) Challenge - Today-I-Learned (TIL) AI. In this challenge, participants were required to propose machine-learning solutions for two different domains - Computer Vision and Speech Recognition. The challenge was held using Zindi's platform for 2 weeks.
+  This GitHub repository contains the source code for my implementation of the advanced tier of Defence Science & Technology Agency (DSTA) 2023 Brainhack Decode the Future Artificial Intelligence (AI) Challenge - Today-I-Learned (TIL) AI. In this challenge, participants were required to propose machine-learning solutions for two different domains - Computer Vision and Speech Recognition. The challenge was held using Zindi's platform for 2 weeks. After much work tinkering with different models, my proposed solutions earned me 9th place in the combined leaderboard, out of 39 teams that participated in the challenge. 
 </p>
 
 ## Computer Vision
