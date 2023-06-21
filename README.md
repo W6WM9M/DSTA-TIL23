@@ -1,6 +1,6 @@
-# DSTA Today-I-Learned AI 2023
+# DSTA Today-I-Learned AI 2023 Qualifiers
 <p align="justify"> 
-  This GitHub repository contains the source code for my implementation of the advanced tier of Defence Science & Technology Agency (DSTA) 2023 Brainhack Decode the Future Artificial Intelligence (AI) Challenge - Today-I-Learned (TIL) AI. In this challenge, participants were required to propose machine-learning solutions for two different domains - Computer Vision and Speech Recognition. The challenge was held using Zindi's platform for 2 weeks. After much work tinkering with different models, my proposed solutions earned me 9th place in the combined leaderboard, out of 39 teams that participated in the challenge. 
+  This GitHub repository contains the source code for my implementation of the advanced tier of Defence Science & Technology Agency (DSTA) 2023 Brainhack Decode the Future Artificial Intelligence (AI) Challenge - Today-I-Learned (TIL) AI. In this challenge, participants were required to propose machine-learning solutions for two different domains - Computer Vision and Automatic Speech Recognition. The challenge was held using Zindi's platform for 2 weeks. After much work tinkering with different models, my proposed solutions earned me 9th place in the combined leaderboard, out of 39 teams that participated in the challenge. 
 </p>
 
 ## Computer Vision
@@ -14,10 +14,10 @@
   For object detection, as it is paramount to identify all plushies, I used <a href="https://github.com/ultralytics/ultralytics">YOLOv8x</a>, which is the most accurate model among the YOLOv8 models. The YOLOv8x model was loaded with the publicly available pre-trained checkpoint and finetuned further on the plushie training dataset. The finetuned YOLOv8x model was then used to identify the plushies in the test dataset. In order to perform re-identification, I extracted the image features of the identified plushies and used the extracted features to do a pairwise comparison with the query plushie's feature. A simple two-layer neural network was trained to do the pairwise comparison and provide a probability for whether an identified plushie is the same as the provided query plushie. To further improve the accuracy of classification, I turned to ensemble learning where I attempted to use various feature extractors including <a href="https://huggingface.co/microsoft/resnet-50">ResNet50</a>, <a href="https://huggingface.co/docs/timm/models/se-resnet">SeResNet152</a>, and <a href="https://huggingface.co/google/vit-base-patch16-224-in21k">Vision Transformer</a>. Due to the lack of time, I was unable to attempt finetuning the feature extractors with the provided training dataset. Out of 31 teams that participated in the computer vision challenge, my solution achieved 8th place in the public leaderboard and 9th place in the private leaderboard.
 </p>
 
-## Speech Recognition
+## Automatic Speech Recognition
 ### Problem
 <p align="justify"> 
-  As for speech recognition, we were tasked to develop a model to perform speech-to-text transcription. We were provided with a training dataset consisting of speech audio clips with utterances of a few seconds per clip and their corresponding transcription to train the model. A separate test dataset was used to evaluate our model based on the Word Error Rate metric. 
+  As for automatic speech recognition, we were tasked to develop a model to perform speech-to-text transcription. We were provided with a training dataset consisting of speech audio clips with utterances of a few seconds per clip and their corresponding transcription to train the model. A separate test dataset was used to evaluate our model based on the Word Error Rate metric. 
 </p>
 
 ### Proposed Solution
